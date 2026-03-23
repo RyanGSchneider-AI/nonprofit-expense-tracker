@@ -1,4 +1,2 @@
 # nonprofit-expense-tracker
-Mobile app for users to help the treasurer classify expenses quickly
-
-Quick touch for repo check
+Web app for communication on accounting entries between users, with the goal to help the treasurer classify expenses quickly
