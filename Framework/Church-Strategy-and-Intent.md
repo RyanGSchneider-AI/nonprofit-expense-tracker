@@ -25,6 +25,7 @@
 | Date | What Changed | What It Was Before | Why It Changed | Connected Artifacts Affected |
 |---|---|---|---|---|
 | 2026-03-14 | Initial creation | No prior version | Framework instantiation scoped to financial coordination effort | Business-Case, Funding-and-Business-Model |
+| 2026-03-14 | SG-020 success condition updated — Finance Committee budget-vs-actual view removed from app scope | Success condition stated Finance Committee could view budget-vs-actual summary in the app | Scope decision: budget-vs-actual and Finance Committee reporting stays in QuickBooks for the foreseeable future; app scope is expense entry, search, and status for Treasurer and Office Administrator | Business-Case, Roles-and-Personas |
 
 ---
 
@@ -117,7 +118,7 @@ The current shared spreadsheet provides visibility but no workflow. Expenses are
 - Treasurer can review and approve expense entries remotely without accessing QuickBooks directly
 - Office Administrator can enter expenses with guided account selection — no accounting expertise required
 - Misclassifications are caught at entry, not at month-end
-- Finance Committee can view a clean budget-vs-actual summary without requesting it from the Treasurer
+- Finance Committee reporting continues through QuickBooks — app scope is coordination and entry, not reporting
 
 **Connected Initiatives**:
 - Business-Case-Church-Expense-App.md

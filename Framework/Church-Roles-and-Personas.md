@@ -25,6 +25,7 @@
 | Date | What Changed | What It Was Before | Why It Changed | Connected Artifacts Affected |
 |---|---|---|---|---|
 | 2026-03-14 | Initial creation | No prior version | Framework instantiation for church expense coordination project | Product-Build-Record |
+| 2026-03-14 | Finance Committee and Pastor removed as application users — reporting stays in QuickBooks for foreseeable future | Finance Committee Member and Pastor listed as secondary read-only users of the application | Scope decision: budget-vs-actual reporting and Finance Committee read-only view deferred; QuickBooks remains the reporting system of record | Internal-Stakeholders, Business-Case |
 
 ---
 
@@ -32,7 +33,7 @@
 
 This application has two primary users with meaningfully different needs and very different relationships to accounting. The Treasurer has deep financial context and owns accuracy. The Office Administrator has operational context and owns speed and volume. The application must serve both without requiring either to work outside their natural domain.
 
-A Finance Committee Member and the Pastor are secondary users — read-only viewers who need clarity, not detail.
+The Finance Committee and Pastor are not application users in this prototype or near-term plan — financial reporting stays in QuickBooks. The application access design should anticipate future read-only access for these roles without implementing it now.
 
 ---
 
@@ -74,7 +75,7 @@ A part-time volunteer with financial expertise, responsible for the accuracy of 
 - If the chart of accounts in the application doesn't match QuickBooks exactly, it creates a reconciliation problem rather than solving one
 
 #### Success Looks Like
-Month-end close requires no retroactive corrections. Finance Committee reports are generated from accurate data without manual adjustment. The Treasurer can review and approve expenses from anywhere without needing to be in the office or access QuickBooks directly.
+Month-end close requires no retroactive corrections. The Treasurer can see all entered expenses and their status from anywhere without needing to be in the office or open QuickBooks directly. Finance Committee reporting continues through QuickBooks.
 
 ---
 
@@ -138,7 +139,7 @@ The Administrator enters expenses confidently, knowing the account choices are c
 
 **What Resolves Their Concern**: A clean, readable monthly report — budget vs. actual by category, restricted fund balances clearly separated, no unexplained variances.
 
-**Blocking Behaviors**: If the application produces reports that are harder to read than what the Treasurer currently produces manually, the Finance Committee will not see value in the change.
+**Blocking Behaviors**: If the application's coordination workflow creates more work for the Treasurer without meaningfully reducing errors or coordination overhead, the Finance Committee will question the value of the change. Note: the Finance Committee does not interact with the application directly — reporting stays in QuickBooks.
 
 ---
 
@@ -169,5 +170,5 @@ The Administrator enters expenses confidently, knowing the account choices are c
 | 1 | Does the Office Administrator currently enter expenses directly into QuickBooks, or into a separate system/spreadsheet? | Treasurer | | |
 | 2 | What does the Administrator currently do when they're unsure which account to use — guess, ask the Treasurer, or leave it blank? | Treasurer / Administrator | | |
 | 3 | How does the Administrator currently receive expense requests from ministry staff — email, paper, verbal? | Treasurer / Administrator | | |
-| 4 | Does the Finance Committee want a specific report format, or will a clean budget-vs-actual summary suffice? | Finance Committee Chair | | |
+| 4 | When should Finance Committee read-only access be added to the application — after the prototype validates the core workflow, or as part of the first production build? | Treasurer / Finance Committee | | |
 | 5 | Should the Pastor have access to the application, or is a monthly summary report sufficient? | Pastor / Treasurer | | |

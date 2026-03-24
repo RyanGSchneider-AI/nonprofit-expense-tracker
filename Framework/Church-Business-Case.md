@@ -21,6 +21,7 @@
 | Date | What Changed | What It Was Before | Why It Changed | Connected Artifacts Affected |
 |---|---|---|---|---|
 | 2026-03-14 | Initial creation | No prior version | Framework instantiation | Strategy-and-Intent, Roles-and-Personas |
+| 2026-03-14 | Proposed initiative scope narrowed — Finance Committee reporting and budget-vs-actual removed | Proposed initiative included Finance Committee read-only view, budget-vs-actual reporting, and export/report generation | Scope decision: these capabilities stay in QuickBooks for the foreseeable future; app scope limited to expense entry, search, and status for Treasurer and Office Administrator | Roles-and-Personas, Internal-Stakeholders |
 
 ---
 
@@ -58,24 +59,25 @@ Build a lightweight web-based expense coordination application with the followin
 
 **For the Office Administrator:**
 - Guided expense entry — account and class selection presented in plain language mapped to the QuickBooks chart of accounts
-- Receipt attachment or reference
-- Ability to flag an entry for Treasurer review with a note
-- Status indicator — shows whether an entry is pending review, approved, or needs correction
+- Receipt status indicator (received electronically yes/no)
+- Payment method selection (church credit card or direct remittance)
+- Status indicator — shows whether an entry is Pending or Paid
 
 **For the Treasurer:**
-- Remote review of all pending expense entries
-- Approve, flag for correction, or return with a note
-- Budget-vs-actual view by account and class
-- Export or report generation for Finance Committee
+- Remote visibility of all entered expenses and their status
+- Expense search by vendor, description, or amount
+- Status tracking — Pending or Paid with date
 
-**For the Finance Committee (read-only):**
-- Budget-vs-actual summary view
-- Restricted fund balance visibility
-- No transaction entry capability
+**What is explicitly deferred to future iterations:**
+- Treasurer review / approve / return workflow — high value, out of scope for prototype
+- Budget-vs-actual reporting — stays in QuickBooks for the foreseeable future
+- Finance Committee read-only view — stays in QuickBooks for the foreseeable future
+- Predictive expense type suggestion — future iteration
 
 **What it is not:**
 - A replacement for QuickBooks — the church's accounting system of record remains QuickBooks Desktop Pro
-- A full accounting system — it is a coordination and review layer that feeds into QuickBooks
+- A reporting tool — financial reporting to the Finance Committee and congregation stays in QuickBooks
+- A full accounting system — it is a coordination and entry layer that feeds into QuickBooks
 - A paid service — hosted and operated at no ongoing cost
 
 ---
@@ -98,7 +100,7 @@ Build a lightweight web-based expense coordination application with the followin
 | Reduced month-end correction time | Cost reduction — Treasurer time | [Est. X hours/month saved] | Currently spends [Y hours] on retroactive corrections |
 | Earlier detection of misclassifications | Risk reduction | Qualitative | Errors caught at entry vs. at month-end close |
 | Reduced coordination overhead | Cost reduction — both users | [Est. X hours/month saved] | Currently requires separate email/phone coordination for unclear entries |
-| Improved Finance Committee reporting accuracy | Quality improvement | Qualitative | Reports generated from reviewed data rather than unreviewed entries |
+| Improved QuickBooks data quality | Quality improvement | Qualitative | Guided entry reduces misclassifications before they reach QuickBooks — cleaner source data improves all downstream reporting |
 | Restricted fund compliance confidence | Risk reduction | Qualitative | Memorial and designated fund entries reviewed before close reduces compliance risk |
 
 > Benefit estimates to be refined based on Treasurer's assessment of current time spent on corrections and coordination.

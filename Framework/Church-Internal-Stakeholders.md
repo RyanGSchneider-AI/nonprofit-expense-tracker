@@ -25,6 +25,7 @@
 | Date | What Changed | What It Was Before | Why It Changed | Connected Artifacts Affected |
 |---|---|---|---|---|
 | 2026-03-14 | Initial creation | No prior version | Framework instantiation for church expense coordination project | Roles-and-Personas, Strategy-and-Intent |
+| 2026-03-14 | Application Access table updated — Finance Committee and Pastor access deferred | Finance Committee Chair and Members listed as Read-only — reports; Pastor listed with high-level summary access | Scope decision: reporting stays in QuickBooks for foreseeable future; app access for these roles deferred to future iteration | Roles-and-Personas, Business-Case |
 
 ---
 
@@ -121,9 +122,9 @@
 |---|---|---|
 | **Treasurer** | Full access — all functions | Owns financial accuracy and reporting |
 | **Office Administrator** | Expense entry and status tracking | Primary operational user — enters and classifies expenses |
-| **Finance Committee Chair** | Read-only — reports and summaries | Needs financial visibility without transaction entry |
-| **Pastor** | Read-only — high-level summary only | Strategic visibility; not involved in transaction detail |
-| **Finance Committee Members** | Read-only — reports | Periodic review for oversight purposes |
+| **Finance Committee Chair** | Deferred — no access in prototype | Reporting stays in QuickBooks; read-only access planned for future iteration |
+| **Pastor** | Deferred — no access in prototype | Reporting stays in QuickBooks; summary access planned for future iteration |
+| **Finance Committee Members** | Deferred — no access in prototype | Reporting stays in QuickBooks |
 | **All others** | No access | Expenses submitted through Office Administrator |
 
 ---
